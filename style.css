@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+:root {
+  --font-nunito: "Nunito", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #343434;
+  color: white;
+  font-family: var(--font-nunito);
+}
+
+svg {
+  position: absolute;
+  z-index: 0;
+  left: -55%;
+  top: -8%;
+  width: 150%;
+}
+
+.content {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 75%;
+  position: relative;
+  z-index: 1;
+}
+.content h1 {
+  font-weight: normal;
+  font-size: 1.4em;
+}
+
+.quote-container {
+  display: flex;
+  width: 100%;
+  place-content: center;
+}
+.quote-container .avatar {
+  width: 25px;
+  height: 25px;
+  background-color: gray;
+  border-radius: 50%;
+}
+.quote-container p {
+  margin: 0.3em 0.5em;
+  font-size: 0.9em;
+}
+
+.cta {
+  margin-top: 3em;
+  display: inline-block;
+  background-color: #00e472;
+  color: black;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border: 0.2em;
+  font-weight: bold;
+}
+
+@media screen and (width >= 840px) {
+  body {
+    font-size: 22px;
+    overflow-x: hidden;
+  }
+  .content {
+    text-align: left;
+    width: 80%;
+    margin: 10em auto 0 auto;
+  }
+  .content h1 {
+    width: 50%;
+  }
+  svg {
+    left: unset;
+    right: -5%;
+    top: -8%;
+    width: 1200px;
+  }
+  .quote-container {
+    display: flex;
+    place-content: unset;
+  }
+  .quote-container p {
+    margin-top: 0;
+  }
+}
+@media screen and (width >= 1220px) {
+  svg {
+    position: absolute;
+    z-index: 0;
+    left: unset;
+    right: -5%;
+    top: -20%;
+    overflow: hidden;
+    width: 1600px;
+  }
+}/*# sourceMappingURL=style.css.map */
